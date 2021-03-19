@@ -91,7 +91,7 @@ la cual asigna el valor a la posición i del vector v.
 */
 void asignarValor(Vector * v, int i, int valor)
 {
-  ;
+  
 
 }
 
@@ -113,6 +113,7 @@ actualiza el vector `c` con el resultado de la suma.
 */
 void sumaV(Vector * a, Vector * b, Vector * c)
 {
+   
 
 }
 
