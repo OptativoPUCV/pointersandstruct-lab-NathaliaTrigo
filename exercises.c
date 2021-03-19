@@ -83,9 +83,10 @@ typedef struct
 
 Vector * crearVector(int n) 
 {
+  int a = n;
   Vector *v= (Vector*)malloc(sizeof(Vector));
   v->datos = (int*)calloc(n, sizeof(int));
-  v->capacidad = n;
+  v->capacidad = a;
    return NULL;
 }
 
@@ -108,9 +109,7 @@ la cual retorna el valor en la posición i del vector v.
 int obtenerValor(Vector * v, int i)
 {
   return v->datos[i];
-
-
-   return 0;
+  return 0;
 }
 
 /*
@@ -120,6 +119,7 @@ actualiza el vector `c` con el resultado de la suma.
 */
 void sumaV(Vector * a, Vector * b, Vector * c)
 {
+
 
    
 
