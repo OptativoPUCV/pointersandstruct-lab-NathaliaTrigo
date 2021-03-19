@@ -62,9 +62,7 @@ typedef struct {
 
 Persona* crearPersona(char nombre[], char rut[], int edad)
 {
-
-
-
+ 
 
    return NULL;
 }
@@ -77,7 +75,8 @@ un vector con capacidad `n`, reserva la memoria
 correspondiente para el arreglo con `n` datos 
 inicializados en 0 y luego retorna el vector creado.
 */
-typedef struct {
+typedef struct 
+{
    int * datos; // arreglo dinámico
    int capacidad; // capacidad del arreglo
 } Vector;
@@ -108,6 +107,8 @@ la cual retorna el valor en la posición i del vector v.
 */
 int obtenerValor(Vector * v, int i)
 {
+  return v->datos[i];
+
 
    return 0;
 }
@@ -119,6 +120,7 @@ actualiza el vector `c` con el resultado de la suma.
 */
 void sumaV(Vector * a, Vector * b, Vector * c)
 {
+
    
 
 }
