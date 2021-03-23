@@ -85,8 +85,8 @@ typedef struct
 
 Vector * crearVector(int n) 
 {
-  Vector *v= (Vector*)calloc(n,sizeof(Vector));
-  v->datos = (int*)calloc(n, sizeof(int));
+  Vector *v= (Vector*) calloc(n,sizeof(Vector));
+  v->datos = (int*) calloc(n, sizeof(int));
   v->capacidad = n;
   return v;
 }
@@ -109,7 +109,6 @@ la cual retorna el valor en la posición i del vector v.
 int obtenerValor(Vector * v, int i)
 {
   return v->datos[i];
-  return 0;
 }
 
 /*
@@ -129,10 +128,15 @@ void sumaV(Vector * a, Vector * b, Vector * c)
 /*
 Ejercicio 8.
 Use las operaciones implementadas de vectores para 
-sumar (a1,a2)+(b1+b2). Almacene el resultado en el vector c.
+sumar (a1,a2)+(b1,b2). Almacene el resultado en el vector c.
 */
 void sumaV2(int a1, int a2, int b1, int b2, Vector *c)
 {
-
-
+  Vector *a = crearVector(2);
+  Vector *b = crearVector(2);
+  asignarValor(a, 0, a1);
+  asignarValor(a, 1, a2);
+  asignarValor(b, 0, b1);
+  asignarValor(b, 1, b2);
+  sumaV(a, b, c);
 }
